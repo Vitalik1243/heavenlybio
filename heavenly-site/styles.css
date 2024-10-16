@@ -1,0 +1,85 @@
+
+/* Подключаем шрифт Advent Pro */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&display=swap');
+
+/* Стили для сайта */
+body {
+  font-family: 'Advent Pro', sans-serif;
+  background-image: url('images/background.jpg'); /* Фоновое изображение */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Добавляем текст под логотипом */
+.subheading {
+  color: #4c4c4c; /* Темно-серый цвет */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #000000; /* Черный цвет */
+  color: white;
+  padding: 15px 30px;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px; /* Скругленные углы */
+  transition: background-color 0.3s, transform 0.2s;
+  width: 250px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #333333; /* Темный оттенок при наведении */
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+#copyEmail {
+  background-color: #555555; /* Цвет для кнопки копирования почты */
+}
+
+.email-text {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 600px) {
+  .button {
+    width: 90%;
+  }
+}
